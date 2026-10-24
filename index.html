@@ -3,11 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting to Wedding Venue...</title>
-    <!-- Instant HTML Redirect -->
-    <meta http-equiv="refresh" content="0; url=https://www.google.com/maps/place/Kashi+Da+Party+Plot/@22.3245094,73.2537165,17z/data=!3m1!4b1!4m6!3m5!1s0x395fcfeb82999033:0x52a4d2dd9f8cced8!8m2!3d22.3245094!4d73.2562914!16s%2Fg%2F11b774rnkx">
+    <title>Daksh & Nidhi's Wedding Location</title>
+    <!-- Try instant automatic redirect -->
+    <meta http-equiv="refresh" content="1; url=https://www.google.com/maps/place/Kashi+Da+Party+Plot/@22.3245094,73.2537165,17z/data=!3m1!4b1!4m6!3m5!1s0x395fcfeb82999033:0x52a4d2dd9f8cced8!8m2!3d22.3245094!4d73.2562914!16s%2Fg%2F11b774rnkx">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fdfbf7 0%, #f4ebd0 100%);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: #ffffff;
+            padding: 30px 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 380px;
+            width: 90%;
+            border: 1px solid #e6d5b8;
+        }
+        h1 {
+            font-size: 22px;
+            color: #8b4513;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #b8860b;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #996d05;
+            transform: translateY(-2px);
+        }
+        .footer-note {
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://www.google.com/maps/place/Kashi+Da+Party+Plot/@22.3245094,73.2537165,17z/data=!3m1!4b1!4m6!3m5!1s0x395fcfeb82999033:0x52a4d2dd9f8cced8!8m2!3d22.3245094!4d73.2562914!16s%2Fg%2F11b774rnkx">click here to open the Google Maps location</a>.</p>
+
+    <div class="card">
+        <h1>Daksh & Nidhi's Wedding</h1>
+        <p>You are being redirected to the wedding venue (Kashida Party Plot, Vadodara). If maps do not open automatically, click below:</p>
+        
+        <a href="https://www.google.com/maps/place/Kashi+Da+Party+Plot/@22.3245094,73.2537165,17z/data=!3m1!4b1!4m6!3m5!1s0x395fcfeb82999033:0x52a4d2dd9f8cced8!8m2!3d22.3245094!4d73.2562914!16s%2Fg%2F11b774rnkx" class="btn" target="_blank">Open in Google Maps</a>
+        
+        <div class="footer-note">Looking forward to celebrating with you!</div>
+    </div>
+
+    <script>
+        // Fallback script to trigger redirect after 1 second if meta-refresh fails
+        setTimeout(function() {
+            window.location.replace("https://www.google.com/maps/place/Kashi+Da+Party+Plot/@22.3245094,73.2537165,17z/data=!3m1!4b1!4m6!3m5!1s0x395fcfeb82999033:0x52a4d2dd9f8cced8!8m2!3d22.3245094!4d73.2562914!16s%2Fg%2F11b774rnkx");
+        }, 1000);
+    </script>
+
 </body>
 </html>
